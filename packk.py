@@ -1,0 +1,18 @@
+from tkinter import ttk
+from tkinter import*
+win=Tk()
+win.title("PYAARA BOWCHAN")
+win.iconbitmap(r'C:\Users\DEll\OneDrive\Desktop\python adv\GUI/appicon_m.ico')
+win.config(bg='black')
+labeling1=Label(win,text='SHINCHAN',bg='pink',fg='black',font=('Arial Black',18,'italic'))
+labeling2=Label(win,text='NANAKOO',bg='pink',fg='black',font=('Arial Black',16,'italic'))
+labeling3=Label(win,text='KAZAMA',bg='pink',fg='black',font=('Arial Black',14,'italic'))
+labeling4=Label(win,text='MASAO',bg='pink',fg='black',font=('Arial Black',12,'italic'))
+labeling1.pack(padx=20,pady=20,ipadx=20,ipady=20,side='top')
+labeling2.pack(padx=20,pady=20,ipadx=20,ipady=20,side='bottom')
+labeling3.pack(padx=20,pady=20,ipadx=20,ipady=20,side='left',fill='y')
+labeling4.pack(padx=20,pady=20,ipadx=20,ipady=20,side='right',fill='y')
+t=input("enter text:")
+labeling5=Label(win,text=t,bg='pink',fg='black',font=('Arial Black',12,'italic'))
+labeling5.pack()
+win.mainloop()
